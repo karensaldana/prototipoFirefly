@@ -1,0 +1,17 @@
+.Navbar {
+    width: 100%;
+    background-color: #FF3A58;
+  }
+  
+  .Navbar__firefly {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Navbar__firefly-logo {
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2rem 0 0.2rem 0;
+  }
