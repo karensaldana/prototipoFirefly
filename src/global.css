@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Anton');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Darker Grotesque');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -8,12 +9,32 @@
 }
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
-  background-color: #F4F4F7;
+  font-family: 'Lato', 'Poppins', sans-serif;
+  background-color: #fff;
 }
 
 h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+h2 {
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+h3 {
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+h4 {
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+h5 {
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+h6 {
+  font-family: 'Baloo Tamma 2', sans-serif;
 }
 
 a.link-unstyled {
@@ -31,24 +52,24 @@ a.link-unstyled:hover {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #FF3A58;
-  border-color: #FF3A58;
+  background-color: #57127F;
+  border-color: #57127F;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):hover {
   color: #fff;
-  background-color: #FF3A58;
-  border-color: #FF3A58;
+  background-color: #D10A84;
+  border-color: #D10A84;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #FF3A58;
-  border-color: #FF3A58;
+  background-color: #57127F;
+  border-color: #57127F;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(87, 18, 127, 0.5);
 }
 
 .btn.btn-danger {

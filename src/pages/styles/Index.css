@@ -1,0 +1,11 @@
+.Home__span {
+  color: #d10a84;
+}
+
+.Index__bg{
+    background-image: url("../../images/banner_firefly.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+    position: relative;
+}
