@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/registro" component={Preregistration} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/inicio" component={Index} />
-          <Route exact path="/dashboard" component={Dashboard}
+          <Route exact path="/dashboard" component={Dashboard} />
           <Route
             exact
             path="/confirmacionemail"

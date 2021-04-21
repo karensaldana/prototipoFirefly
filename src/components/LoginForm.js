@@ -24,17 +24,15 @@ class LoginForm extends React.Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     this.setState({ loading: true, error: null });
-    console.log({ estado: this.state });
     AuthenticationService.iniciarSesion(
       this.state.username,
       this.state.password
     )
       .then((res) => {
-        if (res.data.estado === "successful") {
-          console.log("Claves correctas: login exitoso....");
+        if (res.estado === "successful") {
           this.props.history.push("/dashboard");
         } else {
-          this.setState({ loading: false, error: res.data.mensaje });
+          this.setState({ loading: false, error: res.mensaje });
         }
       })
       .catch((err) => {

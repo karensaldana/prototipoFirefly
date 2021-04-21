@@ -2,10 +2,10 @@ import axios from 'axios';
 
 // Add a request interceptor
 axios.interceptors.request.use( config => {
-  const user = JSON.parse(localStorage.getItem('user'));
+  const tokenStorage = JSON.parse(localStorage.getItem('token'));
 
-  if(user && user.accessToken){
-    const token = 'Bearer ' + user.accessToken;
+  if(tokenStorage && tokenStorage.accessToken){
+    const token = 'Bearer ' + tokenStorage.accessToken;
     config.headers.Authorization =  token;
   }
 
@@ -13,16 +13,8 @@ axios.interceptors.request.use( config => {
 });
 
 class ApiService {
-  async getUserBoard() {
-    return await axios.get("/api/test/user");
-  }
-
-  async getPmBoard() {
-    return await axios.get("/api/test/pm");
-  }
-
-  async getAdminBoard() {
-    return await axios.get("/api/test/admin");
+  async getComunidad() {
+    return await axios.get("/api/Comunidad");
   }
 }
 

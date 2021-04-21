@@ -15,8 +15,8 @@ class Preregistration extends React.Component {
         email: "",
         cellphone: "",
       },
-      estado:"",
-      mensaje:"",
+      estado: "",
+      mensaje: "",
       loading: false,
       error: null,
     };
@@ -52,23 +52,18 @@ class Preregistration extends React.Component {
       userInfo.perfil,
       userInfo.numeroCelular
     ).then(
-      response=>{
+      (response) => {
         this.setState({
-          mensaje: response.data.mensaje,
-          estado: response.data.estado,
+          mensaje: response.mensaje,
+          estado: response.estado,
           loading: false,
-          error: null
+          error: null,
         });
         this.props.history.push("/confirmacionemail");
-      },error =>{
-        console.log("Ocurrio un error = " + error.toString());
-        this.setState({
-          successful: false,
-          error: error.toString(),
-          loading: false
-        });
-      }
-    )
+      })
+      .catch((err) => {
+        this.setState({ error: err, loading: false });
+      });
   };
 
   render() {
